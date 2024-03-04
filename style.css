@@ -50,24 +50,55 @@ body {
 .background_image {
     display: block;
     width: 100%;
-    height: 500px;
+    height: 700px;
     background-position: center;
     margin-bottom: 25px;
-    padding-bottom: 5px;
-    background-image: url(./Links/Top\ Banner\ Background.jpg);
+    padding-bottom: 10px;
+    background-image: url(./Images/Top\ Banner\ Background.jpg);
 }
-.about-me {
-display: inline-flex;
-padding-left: 25px;
-}
-#description {
-    float: left;
-    font-size: 30px;
-    border-right: 10px;
-    border-color: black;
-    padding: 30px;
-}
-p {
-    display: flexbox;
+
+h2 {
+    border-right: 10px solid black;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width:200px;
+    height: 100px;
+    font-size: 35px;
+    margin-right: 10px;
+    margin-left: 10px;
     padding: 50px;
+}
+
+.about-me {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p {
+    margin-left: 50px;
+    width: 700px;
+}
+#headshot {
+    height: 200px;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+.contact-me {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contactinfo {
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: space-between;
+}
+#github, #phonenumber, #email {
+    margin: 50px;
 }
