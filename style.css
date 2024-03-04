@@ -65,7 +65,10 @@ body {
     border-bottom: 15px, solid, black;
 }
 
-#about-me,#projects,#personalinfo,#workexp {
+#about-me,
+#projects,
+#personalinfo,
+#workexp {
     display: flex;
     border-right: 5px solid black;
     flex-direction: column;
@@ -104,23 +107,35 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-content: stretch;
     margin-bottom: 100px;
     margin-right: 25%;
 }
 
+#projects {
+    flex: 0 0 8;
+}
+
+.work>div {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 70%;
+    padding-left: 73px;
+}
+
 .card1 {
     width: 700px;
-    text-align: left;
+    text-align: center;
     border-width: 3px;
     border-style: solid;
+    height: fit-content;
+    margin: 20px;
 }
 
 #projectlink {
-    position: relative;
-    margin-bottom: -5%;
     background: #738678;
     width: 100%;
+    border-bottom: 3px, solid, black;
 }
 
 /* unvisited link */
@@ -135,26 +150,37 @@ p {
 
 .card1 img {
     width: 100%;
+    height: fit-content;
 }
 
 .card2 {
     width: 500px;
-    text-align: left;
+    text-align: center;
     border-width: 3px;
     border-style: solid;
     margin: 10px;
+    height: fit-content;
 }
 
 .card2 img {
     width: 100%;
 }
 
+.card2>header {
+    background-color: #738678;
+}
+
 .card3 {
     width: 300px;
-    text-align: left;
+    text-align: center;
     border-width: 3px;
     border-style: solid;
-    justify-self: flex-start;
+    height: fit-content;
+    margin: 10px;
+}
+
+.card3>header {
+    background-color: #738678;
 }
 
 .card3 img {
@@ -207,19 +233,21 @@ footer {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
 @media screen and (max-width: 768px) {
+
     main,
     nav,
     .product {
-      flex-direction: column;
+        flex-direction: column;
     }
-  
+
     .product-slideshow button {
-      /* Removes the slideshow buttons from the document flow */
-      display: none;
+        /* Removes the slideshow buttons from the document flow */
+        display: none;
     }
-  
+
     .product-details {
-      margin-left: 0;
+        margin-left: 0;
     }
-  }
+}
