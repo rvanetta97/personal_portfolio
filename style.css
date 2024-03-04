@@ -1,26 +1,31 @@
-{
+* {
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #f4f3ef;
+    width: 100%;
 }
 
 .main_header {
     padding: 20px;
-    background-color: #000068;
+    background-color: #738678;
     color: #ffffff;
     width: 100%;
+    text-align: center;
 }
+
 /* unvisited link */
 .main_header a:link {
     color: white;
-  }
-  
-  /* visited link */
-  .main_header a:visited {
+}
+
+/* visited link */
+.main_header a:visited {
     color: lightskyblue;
-  }
+}
 
 .main_header h1 {
     display: inline-block;
@@ -33,13 +38,15 @@ body {
     margin-right: 20px;
     float: left;
     font-size: 20px;
+
 }
 
 .main_header ul {
     list-style-type: none;
     color: #ffffff;
-    float: right;
+    text-align: center;
     padding-top: 20px;
+    text-align: center;
 }
 
 .main_header ul li {
@@ -52,53 +59,128 @@ body {
     width: 100%;
     height: 700px;
     background-position: center;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     padding-bottom: 10px;
     background-image: url(./Images/Top\ Banner\ Background.jpg);
+    border-bottom: 15px, solid, black;
 }
 
 h2 {
-    border-right: 10px solid black;
+    display: inline-flex;
+    border-right: 5px solid black;
     flex-direction: column;
     flex-wrap: nowrap;
-    width:200px;
-    height: 100px;
+    width: 150px;
     font-size: 35px;
     margin-right: 10px;
     margin-left: 10px;
-    padding: 50px;
+    column-width: 150px;
+    padding: 100px;
 }
 
-.about-me {
+.aboutme {
     display: inline-flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 p {
-    margin-left: 50px;
+    margin-left: 30px;
+    margin-right: 20px;
+    font-size: 20px;
     width: 700px;
 }
+
 #headshot {
     height: 200px;
-    justify-content: space-between;
-    margin-left: 50px;
+    margin-left: 20px;
 }
+
+/*Work Content*/
+.work {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.card {
+    width: 300px;
+    text-align: left;
+    border-width: 3px;
+    border-style: solid;
+    justify-self: flex-start;
+}
+
+#projectlink {
+    position: relative;
+    margin-bottom: -5%;
+    background: #738678;
+    width: 100%;
+}
+
+/* unvisited link */
+#projectlink a:link {
+    color: white;
+}
+
+/* visited link */
+#projectlink a:visited {
+    color: lightskyblue;
+}
+
+.work img {
+    width: 100%;
+}
+
+/*Contact information*/
 .contact-me {
     display: inline-flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 100px;
+
 }
 
 #contactinfo {
     list-style-type: none;
     display: inline-flex;
-    justify-content: space-between;
 }
-#github, #phonenumber, #email {
-    margin: 50px;
+
+#github,
+#phonenumber,
+#email,
+#linkedin {
+    margin: 60px;
+    font-size: 20px;
+}
+
+/*Resume information*/
+.resume {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#resumelink {
+    margin-left: 50px;
+    font-size: 20px;
+    width: 700px;
+}
+
+footer {
+    text-align: center;
+    background-color: #738678;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }

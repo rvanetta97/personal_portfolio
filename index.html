@@ -1,59 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <title>Rachel Vanetta's Portfolio</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./reset.css"/>
-    <link rel="stylesheet" type="text/css" href="./style.css"></link>
-  </head>
+<html>
+<title>Rachel Vanetta's Portfolio</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="./reset.css" />
+<link rel="stylesheet" type="text/css" href="./style.css">
+</link>
+</head>
 
-  <body>
+<body>
     <header class="main_header">
         <h1>Rachel Vanetta</h1>
+        <nav>
             <ul>
                 <li><a href="#about-me">About Me</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact-me">Contact Me</a></li>
-                <li><a href="#resume">Resume</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#personalinfo">Contact Me</a></li>
+                <li><a href="#workexp">Resume</a></li>
             </ul>
+        </nav>
     </header>
     <section class="background_image">
     </section>
     <main>
-        <section class="about-me"> 
-            <h2 >About Me</h2>
+        <section class="aboutme">
+            <h2 id="about-me">About Me</h2>
+            <img id="headshot" src="./Images/Headshot.jpg" alt="Professional Headshot">
             <p>
-                Operational Specialist with 1+ years of experience creating and implementing operational processes. Currently employed at Zivian Health Inc.
-                Pursuing an education in coding at Case Western Reserve. Seeking a position within the software engineering space to utilize my knowledge 
+                Operational Specialist with 1+ years of experience creating and implementing operational processes.
+                Currently employed at Zivian Health Inc.
+                Pursuing an education in coding at Case Western Reserve. Seeking a position within the software
+                engineering space to utilize my knowledge
                 and passion for operational and product excellence.
             </p>
-            <img id="headshot" src="./Images/Headshot.jpg" alt="Professional Headshot">
+
         </section>
         <section class="work">
-            <h2>Work</h2>
-            <section id="projectcard">
-                <header><a href="https://rvanetta97.github.io/CWRU-Challenge1-Horiseon_Marketing_Solutions_website/">Horiseon Marketing Solutions Website></a></header>
-                <img src="./Images/Website Building.jpg" alt="building html site"/>            
+            <h2 id="projects">Work</h2>
+            <section class="card">
+                <header id="projectlink"><a href="https://rvanetta97.github.io/CWRU-Challenge1-Horiseon_Marketing_Solutions_website/">Horiseon Marketing Solutions Website></a></header>
+                <img src="./Images/Website Building.jpg" alt="building html site" />
             </section>
         </section>
         <section class="contact-me">
-            <h2>Contact Me</h2>
+            <h2 id="personalinfo">Contact Me</h2>
             <ul id="contactinfo">
-               <li><a id="phonenumber" href="tel:+4122066984">+412-206-6984</a></li>
-               <li><a id="email" href=mailto:“rachel.vanetta@gmail.com”>rachel.vanetta@gmail.com</a></li>
-               <li><a id="github" href="https://github.com/rvanetta97">Github</a></li>
+                <li><a id="phonenumber" href="tel:+4122066984">+412-206-6984</a></li>
+                <li><a id="email" href=mailto:“rachel.vanetta@gmail.com”>rachel.vanetta@gmail.com</a></li>
+                <li><a id="github" href="https://github.com/rvanetta97">Github</a></li>
+                <li><a id="linkedin" href="www.linkedin.com/in/rachel-vanetta-b1343b215">LinkedIn</a> </li>
             </ul>
         </section>
         <section class="resume">
-            <h2>Resume</h2>
-            <a id="resume link" rel="stylesheet" href="/Rachel Vanetta Resume 2024.pdf">Rachel Vanetta Resume</a>
+            <h2 id="workexp">Resume</h2>
+            <a id="resumelink" rel="stylesheet" href="/Rachel Vanetta Resume 2024.pdf">Rachel Vanetta Resume</a>
         </section>
     </main>
-  </body>
+</body>
 
-  <footer>
+<footer>
     &#169; Rachel Vanetta 2024
-  </footer>
+</footer>
+
 </html>
