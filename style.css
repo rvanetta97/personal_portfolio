@@ -65,23 +65,22 @@ body {
     border-bottom: 15px, solid, black;
 }
 
-h2 {
-    display: inline-flex;
+#about-me,#projects,#personalinfo,#workexp {
+    display: flex;
     border-right: 5px solid black;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     width: 150px;
     font-size: 35px;
-    margin-right: 10px;
-    margin-left: 10px;
     column-width: 150px;
     padding: 100px;
+    column-gap: 20px;
 }
 
 .aboutme {
     display: inline-flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 100px;
@@ -101,20 +100,20 @@ p {
 
 /*Work Content*/
 .work {
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-bottom: 100px;
+    margin-right: 25%;
 }
 
-.card {
-    width: 300px;
+.card1 {
+    width: 700px;
     text-align: left;
     border-width: 3px;
     border-style: solid;
-    justify-self: flex-start;
 }
 
 #projectlink {
@@ -134,7 +133,31 @@ p {
     color: lightskyblue;
 }
 
-.work img {
+.card1 img {
+    width: 100%;
+}
+
+.card2 {
+    width: 500px;
+    text-align: left;
+    border-width: 3px;
+    border-style: solid;
+    margin: 10px;
+}
+
+.card2 img {
+    width: 100%;
+}
+
+.card3 {
+    width: 300px;
+    text-align: left;
+    border-width: 3px;
+    border-style: solid;
+    justify-self: flex-start;
+}
+
+.card3 img {
     width: 100%;
 }
 
@@ -142,7 +165,7 @@ p {
 .contact-me {
     display: inline-flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 100px;
@@ -166,7 +189,7 @@ p {
 .resume {
     display: inline-flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 100px;
@@ -184,3 +207,19 @@ footer {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+@media screen and (max-width: 768px) {
+    main,
+    nav,
+    .product {
+      flex-direction: column;
+    }
+  
+    .product-slideshow button {
+      /* Removes the slideshow buttons from the document flow */
+      display: none;
+    }
+  
+    .product-details {
+      margin-left: 0;
+    }
+  }
